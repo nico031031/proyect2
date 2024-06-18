@@ -1,0 +1,197 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand, .nav-link {
+    color: #e53935 !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #ff7961 !important;
+    transition: color 0.3s ease;
+}
+
+header {
+    background: linear-gradient(135deg, #1f1f1f, #424242);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-section, .table-section {
+    width: 48%;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1f1f1f;
+    color: #e53935;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.6);
+}
+
+.card-header {
+    background-color: #1f1f1f;
+    color: #e53935;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-body input {
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+    background-color: #282828;
+    color: #e53935;
+}
+
+.card-body input:focus {
+    border-color: #e53935;
+}
+
+.card-footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 15px;
+}
+
+.card-footer .btn {
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #e53935;
+    color: #1f1f1f;
+    border: none;
+}
+
+.card-footer .btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-save:hover {
+    background-color: #ff5252;
+}
+
+.btn-clear:hover {
+    background-color: #ff1744;
+    transform: translateY(-3px);
+}
+
+.btn-edit:hover {
+    background-color: #ff4081;
+}
+
+.btn-delete:hover {
+    background-color: #d50000;
+    transform: scale(1.05);
+}
+
+.table {
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+.table th {
+    background-color: #424242;
+    color: #e53935;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.table tbody tr:hover {
+    background-color: #333;
+}
+
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    transition: background-color 0.3s ease;
+}
+
+.table thead th:hover {
+    background-color: #1f1f1f;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card, .table {
+    animation: fadeIn 1s ease both;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #e53935;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(255, 0, 0, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer:hover {
+    background-color: #282828;
+    box-shadow: 0 -8px 16px rgba(255, 0, 0, 0.6);
+}
